@@ -12,14 +12,14 @@ Total deposited: 16 754 850<br>
 Total validators: 523 589<br>
 Lido deposited: 4 798 408<br>
 Lido validators: 149 950<br><br>
-<b>2.Extreme  growth scenario:</b><br>
+<b>2.Extreme  growth negative scenario:</b><br>
 Network state on: 01.04<br>
 Scenario assumption is extreme growth of beacon chain network with new validators entering exactly at churn limit with Lido daily share in new deposits is extremely low (10% quantile of daily share from may 2022 ~ 2%)<br>
 Total deposited: 21 290 727<br>
 Total validators: 665 335<br>
 Lido deposited: 4 749 914<br>
 Lido validators: 148 435<br><br>
-<b>3.Extreme  growth scenario:</b><br>
+<b>3.Extreme  growth positive scenario:</b><br>
 Network state on: 01.04<br>
 Scenario assumption is extreme growth of beacon chain network with new validators entering exactly at churn limit with Lido daily share in new deposits is quite high (70% quantile of daily share from may 2022 on days with mort than 1500 ETH deposited ~ 40%)<br>
 Total deposited: 21 290 727<br>
