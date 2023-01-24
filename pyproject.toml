@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "withdrawls-analysis"
+version = "0.1.0"
+description = "code and results of Lido Analytic team research regarding Capella update"
+authors = ["Your Name <you@example.com>"]
+license = "GNU 3.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.3"
+math3 = "^1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
