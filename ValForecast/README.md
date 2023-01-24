@@ -69,3 +69,11 @@ For each beacon chain and lido model number of possible algorithms was considere
 -Supportive model within tactical goals of pipeline for Lido deposits / validators number model<br>
 -Most basic approach for 2023 forecast - steady reversion to 1:1 rate on April 1th<br>
 -Could be replaced with more advanced approach (e.g., Hull-White with mean reversion to 1) but at this point - no need for that complexity
+
+
+<h3>Models selection & calibration</h3>
+For both models 3 classes of algorithms were considered within the model pipeline creation process.
+For each architecture hyperparameters optimization (lags and weights for AR-models and splines for GAM) were conducted within cross-validation on moving timeframe of 1m through year 2022 (2 months forecast for beacon chain model and 1.5 months for Lido share)
+![image](https://user-images.githubusercontent.com/118216880/214318898-17ea541f-9850-4dd6-b91a-4cf8bc8a3b0c.png)
+
+
