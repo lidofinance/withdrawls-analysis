@@ -1,3 +1,48 @@
+<h3>Beacon chain network state & Lido position scenarios specification</h3>
+
+Within researching protocol stability with proposed withdrawals realisation we’re aiming to cover a broad field of possible scenarios of network state when withdrawals would become available. Goal of this approach is to identify and assert any risks that could rise not only in situations when network growth continues in normal conditions, but also consider edge cases with major shifts to estimate protocol behaviour even in those unlikely scenarios.
+<br>
+Scenarios on network state are defined in total ETH deposited and total number of validators for beacon chain as a whole and for Lido specifically:<br><br>
+<b>1.Expected scenario:</b><br>
+Network state on: 01.04<br>
+Scenario assumption is normal network developing.<br>
+Forecast is generated based on three models: new deposits on beacon chain, Lido share with stETH:ETH exchange rate support model.<br>
+Models specifications could be found here:Beacon chain & Lido validators models<br>
+Total deposited: 16 754 850<br>
+Total validators: 523 589<br>
+Lido deposited: 4 798 408<br>
+Lido validators: 149 950<br><br>
+<b>2.Extreme  growth scenario:</b><br>
+Network state on: 01.04<br>
+Scenario assumption is extreme growth of beacon chain network with new validators entering exactly at churn limit with Lido daily share in new deposits is extremely low (10% quantile of daily share from may 2022 ~ 2%)<br>
+Total deposited: 21 290 727<br>
+Total validators: 665 335<br>
+Lido deposited: 4 749 914<br>
+Lido validators: 148 435<br><br>
+<b>3.Extreme  growth scenario:</b><br>
+Network state on: 01.04<br>
+Scenario assumption is extreme growth of beacon chain network with new validators entering exactly at churn limit with Lido daily share in new deposits is quite high (70% quantile of daily share from may 2022 on days with mort than 1500 ETH deposited ~ 40%)<br>
+Total deposited: 21 290 727<br>
+Total validators: 665 335<br>
+Lido deposited: 6 825 427<br>
+Lido validators: 213 295<br><br>
+<b>4.Extreme  stagnation scenario:</b><br>
+Network state on: 01.04<br>
+Scenario assumption is extreme stagnation of network growth - with zero new validators from 30.12.2022 to 01.04<br>
+Total deposited: 15 840 327<br>
+Total validators: 495 010<br>
+Lido deposited: 4 635 456<br>
+Lido validators: 144 858<br><br>
+<b>5.Extreme  post-Shanghai scenario:</b><br>
+Network state on: 01.06<br>
+Scenario assumption is same with extreme stagnation (4) but after withdrawals available validators are exiting exactly at churn limit for two months and half of them are Lido validators<br>
+Total deposited: 13 032 327<br>
+Total validators: 407 260<br>
+Lido deposited: 3 231 304<br>
+Lido validators: 100 983<br><br>
+
+
+
 <h3>Beacon chain & Lido deposits / validators numbers models specification</h3>
 <h4>Purpose of modelling </h4>
 <b>Tactical:</b> provide forecast on number of validators on beacon chain and which part of them are working with Lido to estimate necessary parameters of network for stETH rebase model in different scenarios within analysis of potential future withdrawals realisation. Among providing expected numbers, also generate extreme scenarios for testing stability of researched realisation. <br>
