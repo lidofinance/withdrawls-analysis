@@ -8,38 +8,38 @@ Network state on: 01.04<br>
 Scenario assumption is normal network developing.<br>
 Forecast is generated based on three models: new deposits on beacon chain, Lido share with stETH:ETH exchange rate support model.<br>
 Models specifications could be found here:Beacon chain & Lido validators models<br>
-Total deposited: 16 754 850<br>
+*Total deposited: 16 754 850<br>
 Total validators: 523 589<br>
 Lido deposited: 4 798 408<br>
-Lido validators: 149 950<br><br>
+Lido validators: 149 950*<br><br>
 <b>2.Extreme  growth negative scenario:</b><br>
 Network state on: 01.04<br>
 Scenario assumption is extreme growth of beacon chain network with new validators entering exactly at churn limit with Lido daily share in new deposits is extremely low (10% quantile of daily share from may 2022 ~ 2%)<br>
-Total deposited: 21 290 727<br>
+*Total deposited: 21 290 727<br>
 Total validators: 665 335<br>
 Lido deposited: 4 749 914<br>
-Lido validators: 148 435<br><br>
+Lido validators: 148 435*<br><br>
 <b>3.Extreme  growth positive scenario:</b><br>
 Network state on: 01.04<br>
 Scenario assumption is extreme growth of beacon chain network with new validators entering exactly at churn limit with Lido daily share in new deposits is quite high (70% quantile of daily share from may 2022 on days with mort than 1500 ETH deposited ~ 40%)<br>
-Total deposited: 21 290 727<br>
+*Total deposited: 21 290 727<br>
 Total validators: 665 335<br>
 Lido deposited: 6 825 427<br>
-Lido validators: 213 295<br><br>
+Lido validators: 213 295*<br><br>
 <b>4.Extreme  stagnation scenario:</b><br>
 Network state on: 01.04<br>
 Scenario assumption is extreme stagnation of network growth - with zero new validators from 30.12.2022 to 01.04<br>
-Total deposited: 15 840 327<br>
+*Total deposited: 15 840 327<br>
 Total validators: 495 010<br>
 Lido deposited: 4 635 456<br>
-Lido validators: 144 858<br><br>
+Lido validators: 144 858*<br><br>
 <b>5.Extreme  post-Shanghai scenario:</b><br>
 Network state on: 01.06<br>
 Scenario assumption is same with extreme stagnation (4) but after withdrawals available validators are exiting exactly at churn limit for two months and half of them are Lido validators<br>
-Total deposited: 13 032 327<br>
+*Total deposited: 13 032 327<br>
 Total validators: 407 260<br>
 Lido deposited: 3 231 304<br>
-Lido validators: 100 983<br><br>
+Lido validators: 100 983*<br><br>
 
 
 
