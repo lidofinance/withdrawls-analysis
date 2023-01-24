@@ -74,6 +74,6 @@ For each beacon chain and lido model number of possible algorithms was considere
 <h3>Models selection & calibration</h3>
 For both models 3 classes of algorithms were considered within the model pipeline creation process.
 For each architecture hyperparameters optimization (lags and weights for AR-models and splines for GAM) were conducted within cross-validation on moving timeframe of 1m through year 2022 (2 months forecast for beacon chain model and 1.5 months for Lido share)
-![image](https://user-images.githubusercontent.com/118216880/214318898-17ea541f-9850-4dd6-b91a-4cf8bc8a3b0c.png)
+<img src='https://user-images.githubusercontent.com/118216880/214318898-17ea541f-9850-4dd6-b91a-4cf8bc8a3b0c.png'>
 
 
