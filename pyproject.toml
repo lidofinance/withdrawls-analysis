@@ -9,6 +9,9 @@ license = "GNU 3.0"
 python = "^3.10"
 pandas = "^1.5.3"
 math3 = "^1.0"
+statsmodels = "^0.13.5"
+matplotlib = "^3.6.3"
+pygam = "^0.8.0"
 
 [tool.poetry.dev-dependencies]
 

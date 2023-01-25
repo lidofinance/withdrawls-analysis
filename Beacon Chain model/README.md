@@ -24,6 +24,54 @@ The model consists of 3 modules, each module responsible for the calculation of 
 
 For understanding how exactly rewards and penalties calculated in beacon chain [read this](https://eth2book.info/bellatrix/part2/incentives/rewards/).
 
+<h3>Usage examples</h3>
+
+<strong>Model single scenario</strong><p>
+Basic use case, with given Beacon Chain state and event in network return oracle report with rebase and additional info
+
+```python
+#input:
+calculate_oracle_report_flow(lido_down_vals=0,other_down_vals=0,lido_new_slashing=200,lido_ongoing_slashing=0,lido_midterm_slashing=0,other_ongoing_slashing=0,network_state=network_scenarios[0],epoch_in_inactivity=0)
+
+#output:
+{'attestation_rewards': 449.2355733750852,
+ 'attestation_penalties': 0.44459999999999994,
+ 'proposal_reward': 66.57884845556343,
+ 'sync_committee_reward': 16.6447125,
+ 'sync_committee_penalty': 0.022230000000000003,
+ 'initial_slashing_penalties': 200.0,
+ 'correlation_slashing_penalties': 0.0,
+ 'total_att_loss_for_new_slashing': 16.187392,
+ 'inactivity_leak_penalty': 0,
+ 'epoch_in_inactivity': 0,
+ 'el_rewards': 0.0,
+ 'cl_rewards': 532.4591343306486,
+ 'total_rewards': 532.4591343306486,
+ 'total_penalties': 200.46683,
+ 'total_delta': 331.9923043306486}
+ '''
+```
+
+<strong>Find edge cases for all scenarios</strong><p>
+For given network scenarios return how many validators should be slashed or doen or reciveve midterm slashing woithin one oracle report in irder to receive negative rebase.
+
+```python
+#input:
+
+pd.DataFrame(simulate_scenarios(network_scenarios))
+
+#output:
+```
+|                  |                      expected |                extreme_growth |            extreme_stagnation |        extreme_post_shanghai |
+|------------------|------------------------------:|------------------------------:|------------------------------:|-----------------------------:|
+|          slashed |                           531 |                           467 |                           528 |                          467 |
+|        lido_down |                         85169 |                         85503 |                         82162 |                        56798 |
+| lido_midterm_min | {'lido': 12, 'other': 187700} | {'lido': 13, 'other': 194200} | {'lido': 12, 'other': 174700} | {'lido': 7, 'other': 195300} |
+| lido_midterm_max |  {'lido': 526, 'other': 5100} |  {'lido': 462, 'other': 6700} |  {'lido': 522, 'other': 4800} | {'lido': 466, 'other': 2800} |
+
+
+
+
 <h3>List of inputs</h3>
 
 ______________________
